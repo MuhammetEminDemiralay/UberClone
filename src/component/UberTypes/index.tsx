@@ -1,13 +1,27 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, Pressable } from 'react-native'
 import { styles } from './styles'
 import UberTypeRow from '../UberTypeRow'
-
+import typesData from '../../assets/data/types'
 
 const UberTypes = () => {
+
+    const confirm = () => {
+
+    }
+
     return (
         <View>
-            <UberTypeRow />
+            {
+                typesData.map((type, index) => (
+                    <UberTypeRow type={type} key={index} />
+                ))
+            }
+            <Pressable onPress={confirm} style={styles.confirmBtn}>
+                <Text style={styles.text}>
+                    Confirm Uber
+                </Text>
+            </Pressable>
         </View>
     )
 }

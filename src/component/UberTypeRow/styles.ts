@@ -6,7 +6,6 @@ export const styles = StyleSheet.create({
         justifyContent : 'space-between',
         alignItems : 'center',
         padding : 20,
-        borderWidth : 1
     },
     image: {
         width : 70,
@@ -15,19 +14,25 @@ export const styles = StyleSheet.create({
     },
     middleContainer: {
         flex : 1,
-
+        marginHorizontal : 10,
+        justifyContent : 'space-between',
+        marginBottom : 5
     },
     endContainer: {
-
+    width :100,
+    justifyContent : 'flex-end',
+    flexDirection : 'row'
     },
     type: {
         fontWeight : 'bold',
         fontSize : 18
     },
     time: {
-
+        color : '#5d5d5d'
     },
     price: {
-
+        fontWeight : 'bold',
+        marginLeft : 10,
+        fontSize : 18
     }
 })
